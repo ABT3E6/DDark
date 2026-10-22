@@ -1,0 +1,50 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5.0,
+        "min": 3.0
+      },
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "deeper_dark:chests/single_ancient_city"
+        }
+
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "deeper_dark:turgid_screaming_vase",
+          "properties": {
+            "generated": "true"
+          }
+        }
+      ]
+
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "deeper_dark:turgid_screaming_vase"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "enchantments": [
+              {
+                "enchantment": "minecraft:silk_touch"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "block.vase.break": {
+    "sounds": [
+      "deeper_dark:vase_break"
+    ],
+    "subtitle": "subtitles.deeper_dark.block.vase.break"
+  }
+}
